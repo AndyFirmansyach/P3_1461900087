@@ -25,8 +25,8 @@ initial-scale=1">
     </head>
         <body>
             <div style="overflow-x:auto;">
-            <a class="tambah" href="{{route( 'mahasiswa.create')}}">
-            Tambah Data </a>
+            <a class="tambah" href="{{route( 'mahasiswa.create')}}">phpTambah Data </a>
+            <a class="tambah" href="{{url( '/mahasiswa/pdf')}}"> Print </a>
 <table>
     <thead>
         <tr>

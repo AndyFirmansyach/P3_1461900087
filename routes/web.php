@@ -20,4 +20,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::resource('mahasiswa', MahasiswaController::class);
+Route::get('users/export/', 'UsersController@export'); 
+Route::get('/mahasiswa/pdf', [MahasiswaController::class, 'generate']);
+Route::resource('mahasiswa', MahasiswaController::class); 
+
+
